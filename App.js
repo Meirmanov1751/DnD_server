@@ -5,7 +5,8 @@ const mongoose = require('mongoose')
 var bodyParser = require('body-parser')
 var cors = require('cors')
 
-const app = express()
+const app = express();
+
 app.use(cors());
 app.use(function (req, res, next) {
   res.setHeader('Access-Control-Allow-Origin', 'http://localhost:3000');
